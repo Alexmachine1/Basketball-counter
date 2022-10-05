@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 body {
     margin: 10px;
     text-align: center;
@@ -11,7 +12,7 @@ body {
     width: 70%;
     margin: auto;
     border-radius: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 120px;
     box-shadow: 20px 10px 20px;
 }
 
@@ -24,11 +25,36 @@ body {
     width: 150px;
     color: red;
     font-size: 90px;
-    font-family:'Poppins' Times, serif;
+    font-family: 'DotGothic16', sans-serif;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
+.foul{
+    background-color: black;
+    width: 90px;
+    color: green;
+    font-size: 60px;
+    font-family: 'DotGothic16', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.texter{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 40px;
+}
+.texted{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    /* text-align: start; */
+    margin-top: 130px;
+}
 button{
     font-size: large;
     background:none;
@@ -41,10 +67,17 @@ button{
 }
 .owner{
     color: antiquewhite;
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 30px;
 }
 
 .resetbtn{
-    margin-top: -60px;
+    margin-top: -80px;
+}
+.foulBtn{
+    margin-left: -20px;
+}
+.winlose{
+    color: white;
+    margin-top: -120px;
 }

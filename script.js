@@ -4,6 +4,11 @@
 
 let firstScore = document.querySelector('#homeScore')
 let secondScore = document.querySelector('#guestScore')
+let finalScore = document.querySelector('.winlose')
+let foulScore = document.querySelector('.foul')
+let foulScore1 = document.querySelector('#foul')
+let periodScore = document.querySelector('#periodScore')
+
 
 let count = 0
 
@@ -46,18 +51,44 @@ function addGuest3(){
 function reset(){
     count = 0
     count1 = 0
+    foulCount = 0
+    foulCount1 = 0
+    periodCount = 1
     // console.log(count)
     guestScore.textContent = count1
     firstScore.textContent = count
+    foulScore.textContent = foulCount
+    foulScore1.textContent = foulCount
+    periodScore.textContent = periodCount
+}
+
+let foulCount = 0
+
+function foul(){
+    foulCount += 1
+    foulScore.textContent = foulCount
+}
+let foulCount1 = 0
+
+function foul1(){
+    foulCount1 += 1
+    foulScore1.textContent = foulCount1
+}
+
+let periodCount = 1
+
+function period(){
+    periodCount += 1
+    periodScore.textContent = periodCount
 }
 
 // function winLose(){
-    if (count > count1){
-        console.log('Home is winning!')
-    }else if (count < count1) {
-        console.log('Guest is winning!')
-    }else {
-        console.log("It's a draw!")
-    }
+//     if (count > count1){
+//         finalScore.textContent = "Home is winning!"
+//     }else if (count < count1) 
+//         finalScore.textContent = 'Guest is winning!'
+//     else {
+//         finalScore.textContent = "It's a draw!"
+//     }
 // }
 // winLose()

@@ -10,16 +10,39 @@
                 <button class="add1" onclick="add1()">+1</button>
                 <button class="add2" onclick="add2()">+2</button>
                 <button class="add3" onclick="add3()">+3</button>
+                <div >
+                    <p class="texter">Fouls</p>
+                    <h1 class="foul">0</h1>
+                    <button class="foulBtn" onclick="foul()">+1</button>
+                </div>
             </div>
+
+            <div>
+                <h2 class="texted">Period</h2>
+                <h1 class="foul" id="periodScore" style="width: 60px; margin-left:-0.01px;">1</h1>
+                <button class="period" onclick="period()">+1</button>
+            
+            </div>
+
+
+
             <div>
                 <h1 class="headed">GUEST</h1>
                 <h1 class="score" id="guestScore">0</h1>
                 <button onclick="addGuest1()">+1</button>
                 <button onclick="addGuest2()">+2</button>
                 <button onclick="addGuest3()">+3</button>
+                <div >
+                    <p class="texter">Fouls</p>
+                    <h1 class="foul" id="foul" >0</h1>
+                    <button class="foulBtn" onclick="foul1()">+1</button>
+                </div>
             </div>
         </div>
-        <button class="resetbtn" onclick="reset()">Reset</button>
+        <div class="resetbtn">
+            <p class="winlose"></p>
+            <button  onclick="reset()">Reset</button>
+        </div>
 
         <p class="owner">Built by Alex Machine (2022)</p>
 
