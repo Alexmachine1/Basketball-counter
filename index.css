@@ -8,14 +8,14 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #19244D;
-    width: 50%;
+    width: 70%;
     margin: auto;
     border-radius: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     box-shadow: 20px 10px 20px;
 }
 
-.container h1{
+.headed{
     color: white;
 }
 
@@ -24,6 +24,9 @@ body {
     width: 150px;
     color: red;
     font-size: 90px;
+    font-family:'Poppins' Times, serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 button{
@@ -34,8 +37,14 @@ button{
     border-radius: 5px;
     margin-right: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 .owner{
     color: antiquewhite;
     margin-top: 60px;
+    font-size: 30px;
+}
+
+.resetbtn{
+    margin-top: -60px;
 }
