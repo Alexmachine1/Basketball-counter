@@ -87,9 +87,10 @@ function winLose(){
     }else if (count < count1) {
         
        return finalScore.textContent = 'Guest is winning!'
-     } else if(count || count1 === 0){
-        return finalScore.textContent = "Game hasn't started yet!"
-     }
+     } 
+    //  else if(count | count1 === 0){
+    //     return finalScore.textContent = "Game hasn't started yet!"
+    //  }
      else {
       return finalScore.textContent = "It's a draw!"
     }
