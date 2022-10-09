@@ -1,6 +1,3 @@
-// let addOne = document.querySelector('.add1')
-// let addTwo = document.querySelector('.add2')
-// let addThree = document.querySelector('.add3')
 
 let firstScore = document.querySelector('#homeScore')
 let secondScore = document.querySelector('#guestScore')
@@ -8,6 +5,7 @@ let finalScore = document.querySelector('.winlose')
 let foulScore = document.querySelector('.foul')
 let foulScore1 = document.querySelector('#foul')
 let periodScore = document.querySelector('#periodScore')
+let message = ""
 
 
 let count = 0
@@ -34,18 +32,18 @@ let count1 = 0
 // guestScore
 function addGuest1(){
     count1 += 1
-    guestScore.textContent = count1
+    secondScore.textContent = count1
 
 }
 
 function addGuest2(){
     count1 += 2
-    guestScore.textContent = count1
+    secondScore.textContent = count1
 }
 
 function addGuest3(){
     count1 += 3
-    guestScore.textContent = count1
+    secondScore.textContent = count1
 }
 
 function reset(){
@@ -55,7 +53,7 @@ function reset(){
     foulCount1 = 0
     periodCount = 1
     // console.log(count)
-    guestScore.textContent = count1
+    secondScore.textContent = count1
     firstScore.textContent = count
     foulScore.textContent = foulCount
     foulScore1.textContent = foulCount
@@ -82,13 +80,22 @@ function period(){
     periodScore.textContent = periodCount
 }
 
-// function winLose(){
-//     if (count > count1){
-//         finalScore.textContent = "Home is winning!"
-//     }else if (count < count1) 
-//         finalScore.textContent = 'Guest is winning!'
-//     else {
-//         finalScore.textContent = "It's a draw!"
-//     }
-// }
-// winLose()
+function winLose(){
+    if (count > count1){
+    return finalScore.textContent = "Home is winning!"
+
+    }else if (count < count1) {
+        
+       return finalScore.textContent = 'Guest is winning!'
+     } else if(count || count1 === 0){
+        return finalScore.textContent = "Game hasn't started yet!"
+     }
+     else {
+      return finalScore.textContent = "It's a draw!"
+    }
+}
+
+function winners(){
+    winLose()
+}
+winners()
